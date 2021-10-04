@@ -1,0 +1,93 @@
+.modal {
+    padding: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: $z-index-modal;
+    background-color: rgba($black, .8);
+    &.show {
+        display: flex;
+    }
+    &__content {
+        transition: opacity .3s ease-in-out;
+        opacity: 0;
+        width: 100%;
+        position: relative;
+        padding: 8rem;
+        border-radius: .5rem;
+        background-color: $secondary;
+        max-width: 50rem;
+        @include breakpoint($mobile-bp) {
+            padding: 4rem;
+            max-width: 40rem;
+        }
+        &--story {
+            background-color: transparent;
+            padding: 0;
+            max-width: 40rem;
+        }
+    }
+    &__close {
+        opacity: .5;
+        transition: transform .35s linear,
+        opacity .2s linear;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        border: 0;
+        background: none;
+        padding: 0;
+        &:hover {
+            opacity: 1;
+            transform: rotate(90deg);
+        }
+    }
+    &__footer {
+        justify-content: center;
+        position: absolute;
+        bottom: 2.5rem;
+        display: flex;
+        @include breakpoint($mobile-bp) {
+            bottom: 1.5rem;
+        }
+        &-item {
+            display: block;
+            margin: 0 1rem;
+            font-size: 1.2rem;
+            @include breakpoint($mobile-bp) {
+                font-size: 1rem;
+            }
+            color: #B2B2B2;
+            &:first-child {
+                margin-left: 3rem;
+                @include breakpoint($mobile-bp) {
+                    margin-left: 1rem;
+                }
+            }
+            a {
+                color: inherit;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+.modal__icons {
+    justify-content: center;
+    display: flex;
+    &-item {
+        margin: 0 .75rem;
+        display: block;
+    }
+}
+.modal__story {
+    box-shadow: 0 10px 30px rgba($black, 25%);
+}

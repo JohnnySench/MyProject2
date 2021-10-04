@@ -1,0 +1,12 @@
+.container {
+    width: 700px;
+    padding: 0 5rem;
+    margin: 0 auto;
+    @include breakpoint($tablet-bp) {
+        max-width: 100%;
+    }
+    @include breakpoint($medium-bp) {
+        width: 62rem;
+        padding: 0 2rem;
+    }
+}

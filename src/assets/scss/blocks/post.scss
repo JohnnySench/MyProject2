@@ -1,0 +1,112 @@
+.post {
+    overflow: hidden;
+    border-radius: 5px;
+    margin-top: 3rem;
+    padding: 2.5rem;
+    background-color: $secondary;
+    box-shadow: 0 15px 25px rgba($black, .35);
+    &__title {
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        &--mb0 {
+            margin-bottom: .5rem;
+        }
+        a {
+            text-decoration: none;
+            color: $white;
+        }
+    }
+    &__header {
+        @include breakpoint($mobile-bp) {
+            position: relative;
+        }
+        &--preview {
+            margin: -2.5rem -2.5rem 2.5rem;
+        }
+        &--open {
+            margin-bottom: 2.5rem;
+        }
+    }
+    &__footer {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        @include breakpoint($mobile-bp) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    &__data {
+        display: flex;
+    }
+    @include breakpoint($mobile-bp) {
+        padding: 1.5rem;
+    }
+}
+.post__description {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #D2D2D2;
+    margin-bottom: 1.5rem;
+}
+.post__data-item {
+    color: #828282;
+    font-size: 1.2rem;
+    &:not(:last-child):after {
+        position: relative;
+        top: -1px;
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        margin: 0 1.3rem;
+        background-color: #C4C4C4;
+        border-radius: 50%;
+    }
+}
+.post__read {
+    @include breakpoint($mobile-bp) {
+        display: block;
+        margin-top: 1.1rem;
+    }
+    color: $blue;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.post__actions {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    a {
+        color: rgba($white, .6);
+        font-size: 1.2rem;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+        img {
+            opacity: .6;
+            margin-left: 1rem;
+            display: inline-block;
+        }
+    }
+}
+.post__photo {
+    margin-bottom: 1rem;
+}
+.post__subtitle {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: $white;
+    margin-bottom: 1.5rem;
+}
+.post__image {
+    @include breakpoint($mobile-bp) {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

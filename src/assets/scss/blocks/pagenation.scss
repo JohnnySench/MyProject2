@@ -1,0 +1,28 @@
+.pagenation {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    @include breakpoint($mobile-bp) {
+        margin-top: 5rem;
+    }
+    &__item {
+        box-shadow: 0 4px 4px rgba($black, .25);
+        border-radius: 3px;
+        width: 4rem;
+        height: 4rem;
+        margin: 0 .65rem;
+        background-color: #0D0D0D;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color .2s linear;
+        &:hover {
+            background-color: $blue;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: $white;
+    }
+}

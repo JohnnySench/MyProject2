@@ -1,0 +1,18 @@
+.header {
+    box-shadow: 0 5px 22px rgba($black, 25%);
+    background-color: #0D0D0D;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: $z-index-header;
+    justify-content: space-between;
+    width: calc(100% - #{$sidebar-width});
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+    @include breakpoint ($tablet-bp) {
+        width: 100%;
+    }
+}

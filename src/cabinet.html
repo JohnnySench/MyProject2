@@ -1,0 +1,41 @@
+---
+layout: default
+title: Cabinet
+---
+
+<h1 class="page__title">Профиль</h1>
+
+<form action="/" method="POST" class="form">
+    <div class="cabinet">
+        <div class="cabinet__form">
+            <div class="form__group form__group--md">
+                <input class="form__control" placeholder="Ваше имя"></input>
+                <span class="form__line"></span>
+            </div>
+
+            <div class="form__group form__group--md">
+                <input class="form__control" placeholder="Ваш e-mail"></input>
+                <span class="form__line"></span>
+            </div>
+            
+            <div class="form__group form__group--md">
+                <input class="form__control" type="password" placeholder="Ваш пароль"></input>
+                <span class="form__line"></span>
+            </div>
+
+            <div class="form__group form__group--md">
+                <input class="form__control" type="password" placeholder="Потвердите пароль"></input>
+                <span class="form__line"></span>
+            </div>
+
+        </div>
+        <div class="cabinet__avatar">
+            <img class="cabinet__photo" src="assets/images/avatar/John.jpg" alt="">
+            <label class="cabinet__file">
+                <input type="file">
+                выбрать аватар
+            </label>
+        </div>
+    </div>
+    <button type="submit" class="btn btn--blue btn--sm">Сохранить</button>
+</form>

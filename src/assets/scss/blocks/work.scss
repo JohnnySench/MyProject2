@@ -1,0 +1,61 @@
+.work {
+    margin-bottom: 3rem;
+    background-color: $secondary;
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: 0 15px 25px rgba($black, .35);
+    display: flex;
+    @include breakpoint($mobile-bp) {
+        display: block;
+        max-width: 30rem;
+        margin: 3rem auto;
+    }
+    &__preview {
+        width: 31rem;
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @include breakpoint($mobile-bp) {
+            display: none;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        max-width: 29rem;
+        padding: 2.5rem;
+        @include breakpoint($mobile-bp) {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+.work__title {
+    font-size: 2.4rem;
+    color: $white;
+    margin-bottom: 3rem;
+    a {
+        color: inherit;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    
+}
+.work__description {
+    font-size: 1.6rem;
+    color: #D2D2D2;
+    font-weight: 300;
+    line-height: 1.68;
+    
+}
+.work__footer {
+    margin-top: auto;
+    &--right {
+        text-align: right;
+    }
+}

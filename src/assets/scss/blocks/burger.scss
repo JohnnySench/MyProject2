@@ -1,0 +1,63 @@
+.burger {
+    display: none;
+    padding: 0;
+    font-size: 0;
+    color: transparent;
+    width: 3rem;
+    height: 2rem;
+    border: none;
+    background: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1.5rem;
+    &__item {
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        font-size: 0;
+        color: transparent;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $white;
+        transition: opacity .3s linear;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -7px;
+            width: 100%;
+            height: 2px;
+            background-color: $white;
+            transition: transform .35s linear;
+        }
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -7px;
+            width: 100%;
+            height: 2px;
+            background-color: $white;
+            transition: transform .35s linear;
+
+        }
+    }
+    @include breakpoint($tablet-bp) {
+        display: block;
+        .show-sidebar & {
+            .burger__item {
+                background-color: transparent;
+                &::before {
+                    transform: rotate(45deg);
+                    top: 0;
+                }
+                &::after {
+                    transform: rotate(-45deg);
+                    top: 0;
+                }
+            }
+        }
+    }
+}    

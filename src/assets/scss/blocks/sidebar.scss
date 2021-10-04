@@ -1,0 +1,25 @@
+.sidebar {
+    background-color: $secondary;
+    box-shadow: 5px 0 15px rgba(#050505, 15%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $sidebar-width;
+    height: 100vh;
+    z-index: 999;
+    &__content {
+        margin-top: -5rem;
+        padding: 0 2rem;
+        // display: flex;
+        // flex-direction: column;
+        @include breakpoint($tablet-bp) {
+            margin-top: 0;
+        }
+    }
+    @include breakpoint ($tablet-bp) {
+        display: none;
+        .show-sidebar & {
+            display: block;
+        }
+    }
+}

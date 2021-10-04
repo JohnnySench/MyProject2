@@ -1,0 +1,159 @@
+---
+layout: default
+title: Johnny
+---
+
+<div class="stories">
+    <div class="stories__item" data-modal="story-modal">
+        <img src="assets/images/stories/1.jpg" alt="" class="stories__preview">
+        <div class="stories__title">Отдыхаю на природе</div>
+        <time class="stories__date" datetime="2020-09-21">04.08.2021</time>
+    </div>
+    <div class="stories__item" data-modal="story-modal">
+        <img src="assets/images/stories/2.jpg" alt="" class="stories__preview">
+        <div class="stories__title">Отдыхаю на природе</div>
+        <time class="stories__date" datetime="2020-09-21">04.08.2021</time>
+    </div>
+    <div class="stories__item" data-modal="story-modal">
+        <img src="assets/images/stories/3.jpg" alt="" class="stories__preview">
+        <div class="stories__title">Отдыхаю на природе</div>
+        <time class="stories__date" datetime="2020-09-21">04.08.2021</time>
+    </div>
+    <div class="stories__item" data-modal="story-modal">
+        <img src="assets/images/stories/4.jpg" alt="" class="stories__preview">
+        <div class="stories__title">Отдыхаю на природе</div>
+        <time class="stories__date" datetime="2020-09-21">04.08.2021</time>
+    </div>
+</div>
+
+<div class="add__post">
+    <form action="/" method="POST" class="add__post-form">
+        <textarea data-autoresize class="add__post-textarea" name="text" placeholder="Напишите что-нибудь"></textarea>
+        <div class="add__post-actions">
+            <label class="add__post-file" for="add-post-file">
+                <input type="file" id="add-post-file">
+            </label>
+            <button type="submit" class="add__post-send">
+                <img src="assets/images/add-post/send.svg" alt="">
+            </button>
+        </div>
+    </form>
+</div>
+
+
+<div class="post">
+    <div class="post__content">
+        <p class="post__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Cum maiores labore repellendus? Minima aperiam delectus
+              dolores quisquam impedit animi, iste voluptatum ullam 
+              fuga eum atque reprehenderit nulla vel iusto quia?
+        </p>
+    </div>
+    <div class="post__footer">
+        <ul class="post__data">
+            <li class="post__data-item">
+                <time datetime="2021-08-06">06.08.2021</time>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<article class="post">
+    <div class="post__header post__header--preview">
+        <a href="post.html">
+            <img class="post__image" src="assets/images/post/cycle.jpg" alt="">
+        </a>
+    </div>
+    <div class="post__content">
+        <h2 class="post__title">
+            <a href="#">Как писать код быстро и безболезненно?</a>
+        </h2>
+        <p class="post__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Harum maiores alias saepe dicta modi suscipit obcaecati,
+              veritatis quasi ducimus iure id cum nisi! Laborum ipsa
+               nam dignissimos minima quis a.
+        </p>
+    </div>
+    <div class="post__footer">
+        <ul class="post__data">
+            <li class="post__data-item">
+                <time datetime="2021-08-06">06.08.2021</time>
+            </li>
+            <li class="post__data-item">создание сайтов</li>
+        </ul>
+        <a href="#" class="post__read">читать</a>
+    </div>
+</article>
+
+<article class="post">
+    <div class="post__header post__header--preview">
+        <div class="embed">
+            <iframe width="1180" height="664" src="https://www.youtube.com/embed/1ccA_Jo6u-o?list=PLoq3Accf02PWYMRAU8RDRjSfJK52vUTo2"
+             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+             picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="post__content">
+        <h2 class="post__title">
+            <a href="#">Купил новый ноутбук за 150 000 руб</a>
+        </h2>
+    </div>
+    <div class="post__footer">
+        <ul class="post__data">
+            <li class="post__data-item">
+                <time datetime="2021-08-06">08.08.2021</time>
+            </li>
+            <li class="post__data-item">продвижение видео</li>
+        </ul>
+        <a href="#" class="post__read">оставить комментарий</a>
+    </div>
+</article>
+
+<article class="post">
+    <div class="post__header post__header--preview">
+        <a href="post.html">
+            <img class="post__image" src="assets/images/post/man.jpg" alt="">
+        </a>
+    </div>
+    <div class="post__content">
+        <h2 class="post__title">
+            <a href="#">Как я сходил на FrontEnd Conf 2021</a>
+        </h2>
+        <p class="post__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Harum maiores alias saepe dicta modi suscipit obcaecati,
+              veritatis quasi ducimus iure id cum nisi! Laborum ipsa
+               nam dignissimos minima quis a.
+        </p>
+    </div>
+    <div class="post__footer">
+        <ul class="post__data">
+            <li class="post__data-item">
+                <time datetime="2021-08-06">06.08.2021</time>
+            </li>
+            <li class="post__data-item">создание сайтов</li>
+        </ul>
+        <a href="#" class="post__read">читать</a>
+    </div>
+</article>
+
+<ul class="pagenation">
+    <li class="pagenation__item">
+        <a href="#" class="pagenation__link">&lt;</a>
+    </li>
+    <li class="pagenation__item">
+        <a href="#" class="pagenation__link">1</a>
+    </li>
+    <li class="pagenation__item">
+        <a href="#" class="pagenation__link">2</a>
+    </li>
+    <li class="pagenation__item">
+        <a href="#" class="pagenation__link">3</a>
+    </li>
+    <li class="pagenation__item">
+        <a href="#" class="pagenation__link">&gt;</a>
+    </li>
+</ul>

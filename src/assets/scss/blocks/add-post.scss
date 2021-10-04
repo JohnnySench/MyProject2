@@ -1,0 +1,68 @@
+.add__post {
+    background-color: #121212;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 4px rgba($black, .25);
+    &-textarea {
+        font-size: 1.5rem;
+        font-family: inherit;
+        height: 2.6rem;
+        resize: none;
+        border: none;
+        color: $white;
+        background-color: transparent;
+        display: block; 
+        width: 75%;
+        @include breakpoint($mobile-bp) {
+            font-size: 1.3rem;
+        }
+        &::placeholder {
+            color: #D2D2D2;
+            
+        }
+    }
+    &-actions {
+        display: flex;
+    }
+    @include breakpoint($mobile-bp) {
+        padding: 1.5rem 1.5rem;
+    }
+}
+.add__post-form {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.add__post-file {
+    display: block;
+    height: 4.4rem;
+    width: 4.4rem;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #EBEBEB url($pathImg + 'file.svg') center no-repeat;
+    &:hover {
+        background-color: darken(#EBEBEB, 5%);
+    }
+    input {
+        display: none;
+    }
+    @include breakpoint($mobile-bp) {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+.add__post-send {
+    display: block;
+    height: 4.4rem;
+    width: 4.4rem;
+    border-radius: 50%;
+    border: none;
+    background-color: $blue;
+    margin-left: 1.2rem;
+    &:hover {
+        background-color: darken($blue, 5%);
+    }
+    @include breakpoint($mobile-bp) {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
